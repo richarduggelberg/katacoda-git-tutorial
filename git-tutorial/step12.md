@@ -4,4 +4,4 @@ Do you remember those changes we stashed earlier? Well, we're going to apply the
 
 Let's pop the stash! `git stash pop`{{execute}}
 
-Now you will have a real merge conflict, good luck solving this. OR you can take this shortcut! './shortcut.sh'{{execute}}
+Now you will have a real merge conflict, good luck solving this. OR you can take this shortcut! `./shortcut.sh`{{execute}}
