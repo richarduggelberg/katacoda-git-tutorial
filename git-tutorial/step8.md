@@ -1,7 +1,7 @@
 # Make your changes 2
 Now that we are on our feature branch, we are going to change one of the functions in our `fibonacci.js` to use an iterative method, stage the changes and commit them to our feature-branch. Go ahead and open the file in the text editor.
 
-Now replace the code with:
+As our change we'll simply replace the code with:
 
 ```js
 function fib(num) {
@@ -23,11 +23,13 @@ console.log(fib(num));
 
 ```
 
+This changes the fibonacci from the, clearly inferior, recursive calculation to, instead, use dynamic programming. It's what the pros do. Recommended by 9 out of 10 dentists.
+
 To check the status of our work so far, run the `git status`{{execute}} command.
 
 Now you can stage the file by running the add command: `git add fibonacci.js`{{execute}}
 
-Okay, so now we are at the last step, actually committing. To commit run `git commit -m "feature: Add iterative fibonacci calculation"`{{execute}}
+Okay, so now we are at the last step, actually committing. To commit run `git commit -m "feature: use dynamic programming for fibonacci calculation"`{{execute}}
 
 #### Examples
 Adds all changes files:
