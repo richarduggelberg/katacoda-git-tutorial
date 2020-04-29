@@ -13,7 +13,7 @@ As we've mention before, this is an operation performed on github. That means yo
 3. Click the big, friendly, green button that says "New pull request".
 4. Now, find the text that says "compare across forks" as part of the sentence right underneath the large "Comparing changes". Click that.
 5. Now it should say something like this:
-    > base repository: <owner>/<repo-name> base:<branch> <--- head repository:<your-name>/<repo-name> compare:<branch>
+    > base repository: owner/repo-name base:branch <-- head repository:your-name/repo-name compare:branch
 6. Create pull request and write something nice about it so that the owner knows what you (at least tried to ) accomplish.
 
 ### Congratulations! You did it!

@@ -1,6 +1,6 @@
 # Push!
 
-Run the following command to push what you've done to the master branch of your fork
+Run the following command to push what you've done to the master branch of your fork!
 
 ```git
 git push origin master
