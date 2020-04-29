@@ -26,8 +26,6 @@ To check the status of our work so far, run the `git status`{{execute}} command.
 
 Now you can stage the file by running the add command: `git add fibonacci.js`{{execute}}
 
-Okay, so now we are at the last step, actually committing. To commit run `git commit -m "feature: Add iterative fibonacci calculation"`{{execute}}
-
 #### Examples
 Adds all changes files:
 
