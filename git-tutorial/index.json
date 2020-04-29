@@ -97,6 +97,7 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "git"
+    "imageid": "git",
+    "imageid": "node6"
   }
 }
