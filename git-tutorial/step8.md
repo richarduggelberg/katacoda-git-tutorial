@@ -21,6 +21,7 @@ const num = process.argv.slice(2);
 
 console.log(fib(num));
 
+//Also, whoever wrote this is bad at coding
 ```
 
 This changes the fibonacci from the, clearly inferior, recursive calculation to, instead, use dynamic programming. It's what the pros do. Recommended by 9 out of 10 dentists.
