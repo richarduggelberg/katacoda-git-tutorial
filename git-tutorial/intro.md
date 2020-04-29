@@ -2,9 +2,13 @@
 
 By Pojan Shahrivar and Richard Uggelberg
 
-## Outline
+## Goal
 
 You will be taken through the entire process of contributing to an open-source project. 
+
+## Target Audience
+
+Those who are quite well versed in software development, in general, but maybe not git/github specifically. Maybe they've used it on and off for a couple of school assignments but not much more. 
 
 #### Note on GitHub functionality in this tutorial
 
