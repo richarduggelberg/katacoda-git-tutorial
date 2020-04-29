@@ -16,8 +16,10 @@ Let's take back that commit.
 
 We do this with what's called a soft reset:
 
-`git reset --soft HEAD^`{{execute}}
+`git reset --soft HEAD~1`{{execute}}
 
 #### Soft?
 
+"Soft" here means that we only revert the commit. All changes are still there. Running "git status" would show that. If our reset was "--hard", then all the changes would be sent straight to the trash. Be careful with that.
 
+The "HEAD~1" means that we go back 1 commit from the current head.
