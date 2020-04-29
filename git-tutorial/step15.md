@@ -1,27 +1,19 @@
-# Commit
+# Commit a little bit with git
 
-Okay, so now we are at the last step, actually committing. (Well, that last that we can perform in this tutorial)
+Alright, so we want to skip that mean part. How do we do that? 
 
-To commit, run this: `git commit -m "feature: use dynamic programming for fibonacci calculation"`{{execute}}
+##### Just edit the file?
 
-Alright, so now it's done.
+Well yeah, we could do that. In this case that makes sense. However, some time, you might need to commit just part of a file. Maybe you're being bad and working on several things at once. It maybe then also happens that these two "things" occupy the same file. We fix that in the staging. 
 
-Wait.
+First reset the staging:
 
-You know what.
+`git reset HEAD fibonacci.js`{{execute}}
 
-Adding "//Also, whoever wrote this is bad at coding" is actually kind of mean. We shouldn't be mean. 
+Then, do the magic with the patch flag "-p":
 
-Let's take back that commit.
+`git add -p fibonacci.js`{{execute}}
 
-We do this with what's called a soft reset:
+Now, it all might seem a bit complicated since you have a lot of options (see list, down below). What git does here is that it divides the code into "hunks". If we wanted to stage the current hunk we'd type "y", if not then "n". However, we want to only remove a small part of the current hunk so we'll have to do this manually. Type "e" for edit to manually edit the staging. The interactive guide should tell you to just erase the line that we don't want to stage. 
 
-`git reset --soft HEAD~1`{{execute}}
-
-#### Soft?
-
-"Soft" here means that we only revert the commit. All changes are still there and staged. Running "git status" would show that. If our reset was "--hard", then all the changes would be sent straight to the trash. Be careful with that. There is also the default, --mixed. Simply put that removes the "commit" and the "add".
-
-#### HEAD?
-
-The "HEAD~1" means that we go back 1 commit from the current head.
+After that, exit the interative mode and commit the changes
