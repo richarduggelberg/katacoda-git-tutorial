@@ -1,26 +1,29 @@
 # Make your changes 2
 Now that we are on our feature branch, we are going to change one of the functions in our `fibonacci.js` to use an iterative method, stage the changes and commit them to our feature-branch. Go ahead and open the file in the text editor.
 
-Now replace the code with:
+As our change we'll simply replace the code with:
 
 ```js
-function fib(num){
-  var a = 1, b = 0, temp;
-
-  while (num >= 0){
-    temp = a;
-    a = a + b;
-    b = temp;
-    num--;
+function fib(num) {
+  var n = parseInt(num);
+  
+  let arr = [0,1]
+  
+  var i;
+  for (i = 2; i < (n + 2); i++ ) {
+    arr.push(arr[i-1] + arr[i-2]);
   }
 
-  return b;
+  return arr[n+1];
 }
 
 const num = process.argv.slice(2);
 
 console.log(fib(num));
+
 ```
+
+This changes the fibonacci from the, clearly inferior, recursive calculation to, instead, use dynamic programming. It's what the pros do. Recommended by 9 out of 10 dentists.
 
 To check the status of our work so far, run the `git status`{{execute}} command.
 
