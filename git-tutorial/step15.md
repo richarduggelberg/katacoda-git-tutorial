@@ -22,4 +22,6 @@ We do this with what's called a soft reset:
 
 "Soft" here means that we only revert the commit. All changes are still there and staged. Running "git status" would show that. If our reset was "--hard", then all the changes would be sent straight to the trash. Be careful with that. There is also the default, --mixed. Simply put that removes the "commit" and the "add".
 
+#### HEAD?
+
 The "HEAD~1" means that we go back 1 commit from the current head.
