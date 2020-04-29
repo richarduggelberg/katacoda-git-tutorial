@@ -5,7 +5,8 @@ To get started with git, we have to do two things, first of all let's go ahead a
 ```
 git config --global user.name "Hugh Jass"
 git config --global user.email hjass@aol.com
-```
+<<<<<<< HEAD
+```{{execute}}
 
 (naturally, if you're doing this on your local machine then you might already hade this config stuff done)
 
