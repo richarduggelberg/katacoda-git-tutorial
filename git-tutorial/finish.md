@@ -13,9 +13,9 @@ Everything in this tutorial should work in the real work too. After all, that's 
 
 ```sh
 cd ..
-sudo rm -r fucking-git-repo-dir
-git clone https://some.github.url/fucking-git-repo-dir.git
-cd fucking-git-repo-dir
+sudo rm -r git-repo-dir
+git clone https://some.github.url/git-repo-dir.git
+cd git-repo-dir
 ```
 
 ##### Or in other words ...
