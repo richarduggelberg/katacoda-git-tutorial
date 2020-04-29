@@ -2,6 +2,8 @@
 
 Adding changes to files to commit. You probably know this step already.
 
+`git add fibonacci.js`{{execute}}
+
 But what if you change your mind? Easy. Just reset the staging with:
 
 `git reset HEAD fibonacci.js`{{execute}}
