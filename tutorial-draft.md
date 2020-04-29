@@ -12,31 +12,50 @@ How to propose changes to a project. The workflow is something like this:
 - Create a fix (commit changes)
 - Submit a pull request to the original project
 
+# Getting started
+
+To get started with git, we have to do two things, first of all let's go ahead and configure git with our name and email. This is to identify who has done what on github.
+
+`git config --global user.name "Sam Smith"`
+`git config --global user.email sam@example.com`
+
+Secondly, we need to create a local repository, we can do that by running the `git init` command.
+
+Great! You're well on your way to become the person everyone asks for help with untangling their git-commit-hell at work. :)
+
+# Remote
+
+Alright, so we want to get the code from the remote repo to our local environment. We're going to have to, you've guessed it, setup something. The 'git remote -v' lists all currently configured remote repositories, which at this point is none.
+To add our forked repo, go ahead and execute the following command:
+```git
+git remote add forked_repo https://github.com/richarduggelberg/katacoda-tutorial.git
+```
+Now if we run `git remote -v`, the output should be a little prettier. You're well on the way to actually look at some code now.
+
+##### Syntax
+Add: `git remote add <name> <url>`
+Remove: `git remote rm <name>`
+Rename: `git remote rename <old-name> <new-name>`
 
 # Fetching
 
-Alright! So now you’ve created your fork and you're ready to get started on your super cool feature. Let’s take a look at how to get the repo from github to your local development environment. To do this, we’re going to use the `fetch` command which downloads objects and refs from a repo.
+Alright! So now we're ready to get started on your super cool feature. Let’s take a look at how to get the repo from github to your local development environment. To do this, we’re going to use the `fetch` command which downloads objects and refs from a repo. This is the command you use when you want to see what everyone has worked on.
+Go ahead and execute the following command to download the content of the repository:
 
-This is the command that we are going to execute to get the forked repo:
+```git
+git fetch forked_repo
+```
+#### Syntax 
 
-Syntax: `git fetch <remote>`
-Example: `git fetch https://github.com/richarduggelberg/katacoda-tutorial.git`
-
-##### Top tip
-If you only want to fetch a specific branch, you can do so `git fetch <remote> <branch>`
-
-# Remote
-So what is this remote thing anyway? I keep getting these errors whenever I try to push my code, why isn't this working?!
-When you fetch a repo, it does not set up the link to the remote repo, it only downloads the objects and refs. We want to set up the upstream link for our local copy of the forked repo to the original repo, so that every time there is a change in the original repo, we can get the latest commits. 
-Did you follow that? Don't worry, here is how we are going to proceed:
-
-Go ahead and enter the command `git remote -v` which should list the links to other repositories
-
-
+Fetch all branches and the whole shebang: `git fetch <remote>`
+Fetch a specfic branch: `git fetch <remote> <branch>`
+Get everything for all remotes: `git fetch --all`
 
 # Cloning
 
-The cloning command is awesome, not only does it get the repository, it also sets up the remote tracking for all of the branches. Trust, me, you’ll learn to appreciate this later on. The syntax is:
+The cloning command is awesome, not only does it get the repository, it also sets up the remote tracking for all of the branches. The syntax is:
+
+
 
 git clone <repository url>
 
