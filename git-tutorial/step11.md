@@ -2,7 +2,7 @@
 
 Merging and conflicts are a part of everyday life of a developer or anyone working with git. They can be a pain in the butt if you don't them, but pretty soon you will become proficient enough to handle them with ease.
 
-###### When do they arise? 
+##### When do they arise? 
 A merge will fail to start when Git sees there are changes in either the working directory or staging area of the current project. Git fails to start the merge because these pending changes could be written over by the commits that are being merged in.
 
 ##### How do we fix them?
