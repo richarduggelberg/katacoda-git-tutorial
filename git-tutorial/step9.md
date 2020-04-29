@@ -2,11 +2,11 @@
 
 So your coworker comes by and wants you to take a look at his code which has a bug and he needs help sorting it out.
 
-Now if we want to switch to his branch, we need to run `git checkout coworker-branch`{{execute}}.
+Now if we want to switch to his branch, we need to run `git checkout coworker-branch`.
 
 But wait! What is this?! Since we haven't pushed our code to the repo yet, we have to stash our changes.
 
-You can go ahead and stash the changes in a dirty working directory away `git stash`. Now all the changes that were made are safe, and we can switch to his branch. `git checkout coworker-branch`{{execute}}
+You can go ahead and stash the changes in a dirty working directory away `git stash`{{execute}}. Now all the changes that were made are safe, and we can switch to his branch. `git checkout coworker-branch`{{execute}}
 
 Take a look in fibonacci.js if you can spot the error?
 
