@@ -8,5 +8,7 @@ Go ahead and execute the following command to download the content of the reposi
 #### Syntax 
 
 Fetch all branches and the whole shebang: `git fetch <remote>`
+
 Fetch a specfic branch: `git fetch <remote> <branch>`
+    
 Get everything for all remotes: `git fetch --all`
