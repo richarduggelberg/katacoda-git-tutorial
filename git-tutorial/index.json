@@ -95,7 +95,8 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uisettings": "javascript"
+    "uisettings": "javascript",
+    "uieditorpath": "/home/scrapbook/tutorial/"
   },
   "backend": {
     "imageid": "git",
