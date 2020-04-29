@@ -4,22 +4,23 @@ Now that we are on our feature branch, we are going to change one of the functio
 Now replace the code with:
 
 ```js
-function fib(num){
-  var a = 1, b = 0, temp;
-
-  while (num >= 0){
-    temp = a;
-    a = a + b;
-    b = temp;
-    num--;
+function fib(num) {
+  var n = parseInt(num);
+  
+  let arr = [0,1]
+  
+  var i;
+  for (i = 2; i < (n + 2); i++ ) {
+    arr.push(arr[i-1] + arr[i-2]);
   }
 
-  return b;
+  return arr[n+1];
 }
 
 const num = process.argv.slice(2);
 
 console.log(fib(num));
+
 ```
 
 To check the status of our work so far, run the `git status`{{execute}} command.
