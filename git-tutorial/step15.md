@@ -18,6 +18,12 @@ git add -p fibonacci.js
 
 Just leave the comment in the code. I guess it applies to us now, great work. 
 
+Do this instead and don't think about it too much:
+
+`git add fibonacci.js`{{execute}}
+
+`git commit -m "feature: use dynamic programming for fibonacci calculation"`{{execute}}
+
 #### Just know this:
 
 It is possible to do partial commits in a number of ways. However, exactly how depends on the context and is also outside the scope of this tutorial. 
