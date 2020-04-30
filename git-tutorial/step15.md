@@ -12,8 +12,14 @@ First reset the staging:
 
 Then, do the magic with the patch flag "-p":
 
-`git add -p fibonacci.js`{{execute}}
+git add -p fibonacci.js
 
-Now, it all might seem a bit complicated since you have a lot of options (see list, down below). What git does here is that it divides the code into "hunks". If we wanted to stage the current hunk we'd type "y", if not then "n". However, we want to only remove a small part of the current hunk so we'll have to do this manually. Type "e" for edit to manually edit the staging. The interactive guide should tell you to just erase the line that we don't want to stage. 
+### But this is really complicated so we're not doing it
 
-After that, exit the interative mode and commit the changes
+Just leave the comment in the code. I guess it applies to us now, great work. 
+
+#### Just know this:
+
+It is possible to do partial commits in a number of ways. However, exactly how depends on the context and is also outside the scope of this tutorial. 
+
+You know, you could try to remove the comment with the patch tool. Maybe that'll get you to really avoid working on several things at once in the future since then you might actually have to use it. ;)
